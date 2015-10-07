@@ -95,6 +95,12 @@ config rule 'edu_16'
 	option sticky '0'
 	option use_policy 'gouestc'
 
+config rule 'uestc_lan'
+	option dest_ip '10.0.0.0/8'
+	option proto 'all'
+	option sticky '0'
+	option use_policy 'gouestc'
+
 config rule 'do_sp1'
 	option dest_ip '128.199.83.7'
 	option proto 'all'
@@ -153,3 +159,4 @@ config member 'wan_telecom'
 config policy 'gouestc'
 	list use_member 'wan_uestc'
 	option last_resort 'default'
+
