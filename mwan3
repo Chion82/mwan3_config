@@ -11,8 +11,8 @@ config rule 'edu'
 	option ipset 'edu_list'
 	option use_policy 'gouestc'
 
-config rule 'hosts_hk'
-	option dest_ip '103.27.77.201'
+config rule 'hosts_sgp'
+	option dest_ip '188.166.190.192'
 	option proto 'all'
 	option sticky '0'
 	option use_policy 'gouestc'
@@ -69,5 +69,4 @@ config member 'wan_telecom'
 config policy 'gouestc'
 	list use_member 'wan_uestc'
 	option last_resort 'default'
-
 
